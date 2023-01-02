@@ -16,6 +16,7 @@ public class Task1 {
         y=x-y;//y=3-2;
         x=x-y;   //x=3-1;
         System.out.println("after swap now x= "+x+", y= "+y);
+        sc.close();
 
     }
 }
