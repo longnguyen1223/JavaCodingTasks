@@ -17,9 +17,7 @@ public class task2 {
 
             } else if (i%3==0) {
                 divisible_3+=" "+i;
-
             }
-            else{continue;}
         }
         System.out.println(divisible_15);
         System.out.println(divisible_5);
