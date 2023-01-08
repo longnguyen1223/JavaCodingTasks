@@ -8,7 +8,7 @@ public class task3 {
         int N=new Scanner(System.in).nextInt();
         for (int i = 1; i <=N ; i++) {
 
-            if(i%60==0){
+            if(i%30==0){
                 System.out.println("CodilityTestCoders");
             }
             else if (i%6==0){
