@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class task1 {
     public static void main(String[] args) {
-        System.out.println(checkPrimeNumber(8));
+        System.out.println(checkPrimeNumber(2));
 
     }
 
