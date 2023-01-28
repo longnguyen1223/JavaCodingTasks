@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class task1 {
     public static void main(String[] args) {
-        FrequencyOfChars2("AAABBCDD");
+        FrequencyOfChars("AAABBCDD");
 
     }
 
@@ -23,9 +23,8 @@ public class task1 {
 
     private static void FrequencyOfChars2(String str){
         String result="";
-        for (int i = 0; i <str.length() ; i++) {
-         int count=   Collections.frequency(Arrays.asList(str.split("")),""+str.charAt(i));
-         if(!result.contains(str.charAt(i)+"")) result+=str.charAt(i)+""+count;
+        for (String each : Arrays.asList(str.split(""))) {
+            if(!result.contains(each)) result+=each+ Collections.frequency(Arrays.asList(str.split("")),each);
         }
         System.out.println(result);
 

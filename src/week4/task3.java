@@ -10,11 +10,10 @@ public class task3 {
 
     private static void removeDup(String str) {
         String result = "";
-        for (int i = 0; i < str.length(); i++) {
-            if (!result.contains(str.charAt(i) + "")) result += str.charAt(i);
+        for (String each : Arrays.asList(str.split(""))) {
+            if (!result.contains(each)) result += each;
         }
         System.out.println(result);
     }
-
 }
 
